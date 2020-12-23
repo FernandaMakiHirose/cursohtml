@@ -1,0 +1,482 @@
+# quais plugins baixar?
+Live Server Preview (F1 + live) vai aparecer o código html
+Portuguese (Brazil) Language Pack for Visual (vai deixar o Visual Studio em português)
+
+# configurações
+vá na engrenagem no canto inferior esquerdo, digite word wrap, coloque em on, assim o código será visualizado independente do tamanho da tela
+digite size e você pode mudar o tamanho da fonte
+digite theme e você pode mudar a cor do seu Visual Studio
+
+vá no canto superior esquerdo e clique em Arquivo, clique em Salvamento Automático
+
+# o que é o html?
+hypertext markup language
+é usada no lado do cliente, front-end
+front-end: html, css, javascript, vão rodar no lado do cliente
+
+# qual é o nome de um arquivo html?
+index.html 
+
+# qual é o atalho para construir o html?
+! + Enter 
+
+# <!DOCTYPE html> 
+significa que estamos usando o html5 
+
+# <html lang="en"></html>
+é o idioma da aplicação
+no caso do Brasil é <html lang="pt-br">
+
+# o que tem dentro da tag html?
+a tag <head></head> é a parte de configuração do site
+e a tag <body></body> é a parte do conteúdo do site
+
+# <head>
+#    <meta charset="UTF-8">
+são caractéres que suportam acentuação 
+
+# <meta name="viewport" content="width=device-width, initial-scale=1.0">
+significa que o site vai ocupar toda a tela que for exibida
+
+#     <title>Document</title>
+# </head>
+é o título do site
+
+# <body></body>
+
+# significado das tags do <body></body>
+h1 = cabeçalho
+p = parágrafo
+hr = uma linha na horizontal 
+br = é uma quebra de linha
+<!--comentário-->
+<img src="jonatan-pie-500.jpg" alt="imagem de um animal na neve"> 
+dentro de alt é uma explicação da imagem, é bom para deficientes visuais
+
+<img src="imagens/jonatan-pie-200.jpg" alt="imagem de um animal na neve"> 
+imagem dentro de uma pasta
+
+<img src="https://i.pinimg.com/originals/96/db/02/96db02163f69246eb5f21823c1e89611.jpg" alt="animal de óculos escuro">
+pegando imagem da internet
+
+<link rel="shortcut icon" href="imagens/Elegantthemes-Beautiful-Flat-Contacts.ico" type="image/x-icon"> adicionando favicon
+
+# adicionar as tags no index.html 
+quando colocamos as tags elas não vão aparecer no site, mas tem um jeito de fazer elas aparecerem. exemplo:
+
+&lt; significa less than 
+&gt; significa greater than 
+p significa a tag que quero colocar
+
+&lt;p&gt;
+
+# símbolos especiais 
+&reg; marca registrada
+&copy; copyright
+&trade; marca registrada em inglês 
+&euro; moeda euro
+&pound; libra
+&yen; moeda japonesa
+&cent; centavo
+&Delta; delta maiúsculo
+&delta; delta minúsculo 
+&uarr; seta para cima
+
+# emojis 
+vá nesse site: https://emojipedia.org/ 
+escolha o emoji que você quer, desça lá embaixo da página e vai ter um código, nesse caso é U+1F495
+copie apenas o número 1F495
+no html vai colocar assim:
+&#x1F495;
+
+# imagens 
+1- para pegar imagens sem direito autoral vá no google > imagens > ferramentas > Marcadas para reutilização com modificação (pode pegar a imagem e modificar ela)
+
+ou Marcadas para reutilização (pode pegar elas, mas não pode modificar ela)
+não recomendo muito esse tipo 
+
+você pode ir em Cor e mudar a cor para transparente caso queira em formato png
+
+2- sites com imagens gratuitas, mas cuidado algumas do site não são, fique atenta a isso, na foto vai estar escrito se é para uso gratuito ou não
+
+https://unsplash.com/ 
+https://www.pexels.com/pt-br/ 
+
+# imagens e seus formatos
+os formatos de imagens que mais usamos é o jpeg e o png, essas imagens precisam ser leves, senão não conseguem rodar no site
+o png tem maior qualidade e tem fundo transparente
+
+# tratar as imagens
+abra o gimp > Selecione uma imagem > Image > Scale image > width máximo 1500 > clique no botão Tab 
+
+resolução x: 72,000 é ótimo > Scale > File > Exportar como > Export as > Qualidade 70 > Export
+
+obs: o nome do arquivo que você vai exportar coloque sempre o tamanho da largura, uma imagem tem no máximo 1500 width para ficar leve no site
+
+do lado de um ícone de varinha mágica para direita no canto superior esquerdo serve para cortar a imagem no tamanho certinho que você quer
+
+na hora de exportar o arquivo você pode escolher se vai ser png ou jpeg
+
+# como pegar ou criar um favicon?
+https://www.iconarchive.com/ 
+na hora de baixar, baixe como ico 
+
+https://www.favicon.cc/ 
+esse site é para você desenhar seu próprio favicon, para fazer download é só clicar em Download Favicon, para finalizar, acesse esse site https://favicon.io/ você pode converter a imagem em ico 
+
+# como adicionar um favicon no site? 
+embaixo de <meta name="viewport" content="width=device-width, initial-scale=1.0">
+digite: link 
+vão aparecer opções e você clica em link:favicon
+dentro do href você colocar Ctrl + espaço 
+e adiciona seu favicon, lembrando que os as imagens precisam estar no projeto
+(nesse caso coloquei dentro da pasta imagens)
+
+# hierarquia de títulos
+os títulos vão de <h1></h1> até <h6></h6>
+é uma hierarquia, o <h1></h1> é o título principal
+<h2></h2> é o subtítulo do <h1></h1>
+<h3></h3> é o subtítulo de <h2></h2>
+<h4></h4> é o subtítulo de <h3></h3>
+<h5></h5> é o subtítulo de <h4></h4>
+<h6></h6> é o subtítulo de <h5></h5>
+
+# tags e parâmetros que não funcionam mais no HTML5
+existem tags e parâmetros que não funcionam mais no HTML5, pra você saber que elas não podem ser usadas mais, no Visual Studio vão aparecer em vermelho. elas podem até funcionam no navegador, mas podem parar de funcionar a qualquer momento. 
+https://www.w3.org/TR/2010/WD-html5-20100304/obsolete.html 
+
+# negrito 
+<b></b>
+<strong></strong>
+
+# itálico
+<i></i>
+<em></em>
+
+# marca texto
+<mark></mark>
+mudar a cor do marca texto (<mark> + style + blackground-color + cor)
+<mark style="background-color: rgb(124, 176, 197);">Isso é um mark de cor diferente</mark>
+
+porém isso só vai servir para essa frase selecionada, se você quer que para todos os textos grifados estejam com uma cor, vá embaixo do <title></title> no head, digite:
+    <style>
+        mark {
+            background-color: fuchsia;
+        }
+    </style>
+
+(digite <style> + mark { + background-color + cor)
+vai ter essa cor fuchsia para todos os marks, exceto para aqueles que tiveram style adicionado na própria tag
+
+# texto pequeno 
+<small></small>
+
+small + Enter
+
+# texto excluído
+<del></del>
+
+del + Enter
+
+# texto sublinhado/inserido
+<ins></ins>
+
+ins + Enter
+
+# texto sobrescrito
+<sup></sup>
+
+sup + Enter
+
+# texto subscrito
+<sub></sub>
+
+sub + Enter
+
+# para colocar código
+<pre></pre>
+<code></code>
+
+pre + Enter
+
+code + Enter
+
+# citação
+<q></q>
+<blockquote cite=""></blockquote>
+o blockquote serve para citar um parágrafo, no cite é necessário colocar de onde você pegou isso, quem é o dono dessa frase
+
+q + Enter
+blackquote + Enter + cite
+
+# abreviação
+<abbr title=""></abbr>
+
+abbr + Enter
+
+# texto invertido 
+ <bdo dir="ltr"></bdo> 
+ da esquerda para direita
+
+ <bdo dir="rtl"></bdo>
+da direita para esquerda 
+
+bdo + bdo : l 
+bdo + bdo : r
+
+# listas ordenadas
+<ol>
+<li>
+</ol>
+
+o <li> não apresenta fechamando </li> a partir do html5
+
+# personalizar as listas
+<ol>
+<li>
+</ol>
+
+lista com o type e o start
+<ol type="" start="">
+<li>
+</ol>
+
+no type vão aparecer sugestões, no start é para começar a lista de determinado momento, dentro do start são colocados números
+
+1- número
+A- ordem alfabética maiúscula
+a- ordem alfabética minúscula
+I- números romanos maiúsculo
+i- números romanos minúsculo
+
+
+ol + Enter
+
+li + Enter
+
+type + Enter
+
+start + Enter
+
+# listas não ordenadas
+<ul type="">
+<li>
+</ul>
+
+disc: padrão
+circle: apenas um circulo, sem nada dentro
+square: um quadrado inteiro
+
+li + Enter
+
+ul + Enter
+
+# listas de definição
+dl + Enter
+
+dt + Enter
+
+dd + Enter
+<dl><dt>
+<dd></dd>
+</dt></dl>
+
+# links externos
+ a + Enter (significa que é um link)  <a href=""></a> (dentro do href colocamos a URL)
+
+existe o target, target=""
+ele vai abrir o link
+dentro dele pode ficar:
+_blank vai abrir o link em uma janela em branco 
+_self vai abrir na janela ou no frame atual (padrão)
+_top vai desfazer tudo e abrir a janela
+_parent vai desfazer tudo e abrir a janela
+
+existe o rel, rel=""
+ele serve para dizer de quem é esse link
+next indica que o link é a próxima parte do documento atual
+prev indica que o link é a parte anterior do documento atual 
+author indica que o link é do autor da página
+external indica que é um link para outro site
+
+exemplo:
+ <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLiyNNaqodsMw0ENAsCtLy17tsKADy_TKn&index=4" target="_blank" rel="external">Este é um link externo</a>
+
+# link para download
+para o download usamos a âncora e o download (nele colocamos o arquivo que deseja efetuar o download) e o type (tipo de extensão do arquivo)
+
+crie uma pasta dentro do projeto e adicione um arquivo, para cada tipo de arquivo tem um modo que você precisa escrever, você pode conferir nesse site: https://www.iana.org/assignments/media-types/media-types.xhtml 
+
+ao criar essa pasta com o arquivo adicione no html: 
+
+a + Enter 
+no href, Ctrl + espaço
+adicione sua pasta e seu arquivo
+digite: download + Enter
+Copie e cole o nome do arquivo
+type + Enter 
+Adicionar o tipo que precisa escrever, exemplo: pdf é application/pdf
+em zip é: application/zip
+Dê um nome para esse link
+
+Exemplo:
+<ul>
+<a href="arquivos/10 - Ligações em toda parte (1).pdf" download="10 - Ligações em toda parte (1).pdf" type="application/pdf">PDF do arquivo dessa aula</a>
+</ul>
+
+# onde pegar áudios
+podemos pegar áudios grátis do youtube, na biblioteca de áudio, fique atenta, pois existem áudios sem direito autoral e com direito autoral! nesse local, podemos fazer download do áudio que você selecionar!
+
+# colocando o mesmo áudio, mas com diferentes extensões
+é necessário colocar isso, porque existem navegadores que não tem compatibilidade com o mp3
+1- <audio></audio> + source + source:src
+2- para áudio mp3 adicionar: audio/mpeg
+3- para áudio ogg adicionar: audio/ogg
+4- para áudio wav adicionar: audio/wav
+5- a ordem é muito importante, qual você colocar primeiro, vai carregar primeiro
+6- se nenhum deles der certo, vai aparecer a mensagem dentro de <p></p>
+7- preload + Enter + metadata (é o melhor, vai carregar as informações do áudio e vai tocar quando o usuário clicar nele, no auto, vai tocar assim que o site carregar, e o none, não vai apresentar nenhuma informação, apenas quando o usuário clicar para tocar o áudio)
+8- se você quiser que quando acabar o áudio, ele começar a tocar tudo de novo, adicione o loop
+9- TENTE EVITAR O ARQUIVO WAV, ele é muito pesado, isso vai pesar muito no seu site
+10- autoplay vai deixar o áudio indo direto
+11- constrols vai mostrar os controles do áudio
+
+<audio preload="metadata" autoplay controls loop>
+ <source src="coloque a pasta e o arquivo mp3" type="audio/mpeg">
+  <source src="coloque a pasta e o arquivo ogg" type="audio/ogg">
+   <source src="coloque a pasta e o arquivo do wav" type="audio/wav">
+   <p>Infelizmente seu navegador não conseguiu reproduzir este áudio</p>
+</audio>
+
+# adicionar vídeo no seu site
+DICAS: podemos baixar vídeos nesse site https://www.pexels.com/pt-br/  
+https://video.online-convert.com/pt/converter-para-ogv é um site para baixar em ogv (ogg)
+Em vídeos locais, não coloque vídeos com mais de 1080 px
+vídeos também têm direitos autorais, fique atenta!
+
+HANDBRAKE: Ele converte a extensão dos vídeos:
+File > Open Single Title
+Format (escolha o formato) > Na primeira caixinha do Preset da esquerda para direita clique em web > Gmail small
+Clique em Start Code
+(Ele não consegue converter em ogg
+Coloque os vídeos dentro de uma pasta para poder acessá-los)
+
+1- podemos adicionar vídeos do próprio local, mas isso NÃO É a melhor escolha, porque os vídeos ficam muito pesados dependendo do tamanho deles, deixando o site lento. vídeos hospedados dessa forma devem e vão consumir muito tráfico de dados
+
+(o loop é opcional)
+
+código pronto:
+
+<video width="" poster="" controls autoplay loop>
+    <source src="" type="video/mp4">
+        <source src="" type="video/webm">
+            <source src="" type="video/ogg">
+                <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+</video>
+
+2- o melhor jeito é incorporar do youtube 
+(Deixando claro que todos vão poder ver o vídeo no youtube, deixe o vídeo público, poste no canal femahi2020@gmail.com 
+O vídeo é gratuito, mas sempre coloque os créditos na descrição, ou seja, o link de onde você pegou a foto, o título dê o nome do vídeo já existente, se não tiver crie um)
+Existe o Vimeo, ele dá umas travadas se a internet do cliente não for tão boa)
+Youtube > Compartilhar > Incorporar
+copie e cole o código html do youtube e perfeito!
+é muito mais recomendado fazer o do youtube, porque já tem a thumb, não está consumindo dados do seu servidor e sim do youtube
+se o vídeo não tem direito autoral, publique ele no youtube e incorpore o código no seu projeto, exemplo: https://www.pexels.com/pt-br/  
+
+# como pegar o código selecionado e mover para o lado?
+selecione tudo + shift + tab + seta
+
+# front-end e back-end
+o front-end é a parte do client-side, vai rodar na parte do cliente, como o html, o css, o javascript
+o back-end é a parte do server-side, como o php, o próprio javascript, c#, python, ruby, java
+full stack, é o desenvolvedor que sabe desenvolver em front-end e back-end
+
+# css
+dá para adicionar css:
+
+1- inline: vai adicionar linha por linha, pode ser adicionado no início da tag body e das tags dentro do body, mexa apenas nas tags que não forem do body, porque as configurações do body fazem a mesma coisa que os estilos internos, NÃO é a melhor opção! ele é bom para usar se você quer adicionar estilos pontuais, com exceções! 
+style + Enter
+
+2- estilos internos: 
+
+
+# atalhos 
+h1 + Enter 
+p + Enter
+p + Enter + lorem
+hr + Enter 
+br + Enter
+img + Enter (Ctrl + espaço > escolha a imagem) (coloque imagens dentro da sua pasta/projeto para dar certo). vamos supor que a imagem esteja dentro de uma pasta para ficar mais organizado, você faz o mesmo processo, mas clica na opção da pasta que o arquivo está e depois no arquivo. para pegar uma imagem da internet é a mesma coisa, porém na parte de colocar a imagem ou a pasta referenciada, cole o link dessa imagem, esse link você pode pegar quando clicar na imagem e ir em Open image in new tab
+link > link:favicon
+dentro do href você colocar Ctrl + espaço
+
+h1 + Enter
+h2 + Enter
+h3 + Enter
+h4 + Enter
+h5 + Enter
+h6 + Enter
+
+b + Enter
+strong + Enter
+
+i + Enter
+em + Enter
+
+<mark> (depois vai ser completado)
+
+small + Enter
+
+del + Enter
+
+ins + Enter
+
+sup + Enter
+
+sub + Enter
+
+pre + Enter
+
+code + Enter
+
+q + Enter
+
+blackquote + Enter + cite
+
+abbr + Enter
+
+bdo + bdo : l 
+bdo + bdo : r
+
+ol + Enter
+
+li + Enter
+
+ul + Enter
+
+type + Enter
+
+start + Enter
+
+selecionar + Alt (é possível mudar para todos os selecionados ao mesmo tempo)
+
+dl + Enter
+
+dt + Enter
+
+dd + Enter
+
+a + Enter
+
+target + Enter + _blank
+
+rel + Enter + external
+
+Ctrl + F (para procurar por palavra em um site)
+
+a + Enter (pasta + arquivo), download + Enter (nome do arquivo), type + Enter (o tipo específico, você acha isso no site)
+
+crie uma pasta e dentro coloque o áudio baixado
+para adicionar no html: audio + Enter
+dentro de src: Ctrl + espaço, e adicione o seu áudio
+adicionar: controls autoplay
